@@ -153,6 +153,9 @@ hr.small {
 .toggle {
     margin: 5px 5px 0 0;
 }
+.active{
+  background: rgba(255,255,255,0.2);
+}
 
 /* Header */
 
