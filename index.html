@@ -201,13 +201,13 @@
               <br>
               <ul class="list-inline">
                   <li>
-                      <a href="https://github.com/gurumohanreddy" target="_blank"><i class="fa fa-github fa-fw fa-3x wow fadeInLeft"></i></a>
+                      <a href="https://github.com/gurumohanreddy" target="_blank"><i class="fa fa-github fa-fw fa-3x"></i></a>
                   </li>
                   <li>
-                      <a href="https://bitbucket.org/gurumohanreddy/" target="_blank"><i class="fa fa-bitbucket fa-fw fa-3x wow fadeInUp"></i></a>
+                      <a href="https://bitbucket.org/gurumohanreddy/" target="_blank"><i class="fa fa-bitbucket fa-fw fa-3x "></i></a>
                   </li>
                   <li>
-                      <a href="https://in.linkedin.com/in/gurumohanreddy" target="_blank"><i class="fa fa-linkedin fa-fw fa-3x wow fadeInRight"></i></a>
+                      <a href="https://in.linkedin.com/in/gurumohanreddy" target="_blank"><i class="fa fa-linkedin fa-fw fa-3x"></i></a>
                   </li>
               </ul>
               <br>
@@ -233,9 +233,11 @@
     <!--wow js  -->
     <script src="/js/wow.min.js"></script>
     <!-- Custom Theme JavaScript -->
+    <script src="/js/motio.min.js" charset="utf-8"></script>
     <script>
     // Closes the sidebar menu
      new WOW().init();
+
 
     $("#menu-close").click(function(e) {
         e.preventDefault();
@@ -266,6 +268,13 @@
     });
 
     $(document).ready(function(){
+
+      var element = document.querySelector('#top');
+        var panning = new Motio(element, {
+            fps: 30, // Frames per second. More fps = higher CPU load.
+            speedX: -30 // Negative horizontal speed = panning to left.
+        });
+        panning.play();
 
          $("section").mouseenter(function(){
          	 var id = $(this).attr('id');

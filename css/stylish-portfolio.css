@@ -78,7 +78,7 @@ hr.small {
     height: 100%;
     margin-right: -250px;
     overflow-y: auto;
-    background: #375B6D;
+    background: #7B959E;
     -webkit-transition: all 0.4s ease 0s;
     -moz-transition: all 0.4s ease 0s;
     -ms-transition: all 0.4s ease 0s;
@@ -104,7 +104,7 @@ hr.small {
     display: block;
     text-decoration: none;
     color: #FFF;
-    font-size: 1.3em;
+    font-size: 1.4em;
 }
 
 .sidebar-nav li a:hover {
@@ -164,12 +164,13 @@ hr.small {
     position: relative;
     width: 100%;
     height: 100%;
-    background-color: #16222A;
+    /*background-color: #16222A;
     background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#16222A), to(#3A6073));
     background-image: -webkit-linear-gradient(top, #16222A, #3A6073);
     background-image: -moz-linear-gradient(top, #16222A, #3A6073);
     background-image: -ms-linear-gradient(top, #16222A, #3A6073);
-    background-image: -o-linear-gradient(top, #16222A, #3A6073);
+    background-image: -o-linear-gradient(top, #16222A, #3A6073);*/
+    background: url('/img/bg1.jpg');
 }
 
 .arrow,.arrow :hover,.arrow :visited,.arrow :focus{
